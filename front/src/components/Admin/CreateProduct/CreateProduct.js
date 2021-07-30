@@ -31,6 +31,11 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems:'center',
+    backgroundColor:"#fff",
+    width:"75%",
+    marginRight:"2%",
+    marginTop:"15px",
+    borderRadius:"15px"
   },
 }));
 
@@ -54,7 +59,8 @@ export default function CreateProduct({ edit }) {
   });
 
   useEffect(() => {
-    dispatch(getCategories());
+    
+    dispatch(getCategories())
 
     if (edit) {
       setProduct({
